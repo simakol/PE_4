@@ -98,24 +98,24 @@ False: 0, пуста строка(""), None
 >> Число 9 найбільше
 '''
 
-print("Введіть три числа:")
+# print("Введіть три числа:")
 
-a = int(input())
-b = int(input())
-c = int(input())
+# a = int(input())
+# b = int(input())
+# c = int(input())
 
-biggestNumber = a
+# biggestNumber = a
 
-if a > b and a > c:
-    biggestNumber = a
-elif b > a and b > c:
-    biggestNumber = b
-elif c > a and c > b:
-    biggestNumber = c
-else:
-    print("Визначити неможливо. Всі числа рівні")
+# if a > b and a > c:
+#     biggestNumber = a
+# elif b > a and b > c:
+#     biggestNumber = b
+# elif c > a and c > b:
+#     biggestNumber = c
+# else:
+#     print("Визначити неможливо. Всі числа рівні")
 
-print("Найбільше число:", biggestNumber)
+# print("Найбільше число:", biggestNumber)
 
 
 '''
@@ -127,7 +127,30 @@ print("Найбільше число:", biggestNumber)
 >> Введіть 2 число: 4
 >> Введіть знак операції: *
 >> Результат: 40
+'''
 
+# first_number = int(input("Введіть 1ше ціле число: "))
+# second_number = int(input("Введіть 2ге ціле число: "))
+# operation = input("Введіть знак операції (+, -, *, /): ")
+
+# result = 0
+
+# if operation == "+":
+#     result = first_number + second_number
+# elif operation == "-":
+#     result = first_number - second_number
+# elif operation == "*":
+#     result = first_number * second_number
+# elif operation == "/":
+#     result = first_number / second_number
+# else:
+#     print("Такої операції не існує!")
+
+# print("Результат операції: ", result)
+    
+
+
+'''
 =================================================================================
 
 2. Написати кофе машину
@@ -141,3 +164,16 @@ print("Найбільше число:", biggestNumber)
 >> Виберіть напій (1 - Лате(25 грн), 2 - Капучино(50 грн), 3 - Чай (10 грн)): 2
 >> На жаль, недостатнько коштів, заберіть решту.
 '''
+
+# cash = int(input("Внесіть кошти: "))
+# drink = int(input("Виберіть напій: \n (1 - Лате(25 грн) \n 2 - Капучино(50 грн) \n 3 - Чай (10 грн)) \n"))
+
+
+# if drink == 1 and cash >= 25:
+#     print("Ви вибрали напій лате, ваша решта:", cash - 25, "грн")
+# elif drink == 2 and cash >= 50:
+#     print("Ви вибрали напій Капучино, ваша решта:", cash - 50, "грн")
+# elif drink == 3 and cash >= 10:
+#     print("Ви вибрали напій Чай, ваша решта:", cash - 10, "грн")
+# else:
+#     print("Такого напою не існує, або у вас не вистачає коштів")
