@@ -81,7 +81,6 @@ print(bool("hello")) # "Hello" -> True
 print(bool("")) # "" -> False
 print(bool(" ")) # " " -> True
 
-
 '''
 True: будь-яке число, крім 0(і додатнє і відʼємне і дробове), будь-яка строка з символами
 
