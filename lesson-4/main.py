@@ -70,11 +70,18 @@ print(str_length("Nice to meet you")) # 16
 laptop -> potpal
 
 будемо робити за допомогою індексів та циклу на перебір слова по символам
+
+1. створюємо нову строку, в яку ми будемо накопичувати букви у зворотньому порядку
+2. отримати довжину рядка
+3. запустити цикл для перебора слова по довжині
+4. отримати букви з кінця і додавати до нової строки
 '''
 
 def reverseStr(str):
-    print(str)
-
+    str_length = len(str)
+    for i in range(0, str_length):
+        print(str[i], i)
 
 print(reverseStr("hello")) # olleh
 print(reverseStr("laptop")) # potpal
+
