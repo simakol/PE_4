@@ -98,7 +98,7 @@ print(reverseStr("keyboard")) # draobyek
 написати фукнцію калькулятор. функція очікує 3 параметри: 1 число, 2 число і знак операції. Фукнція повинна повернути результат математичної операції
 '''
 
-def calculator(first_number, second_number, opataion):
+def calculator(first_number, second_number, operation):
 
 
 print(calculator(5, 8, "*")) # 40
