@@ -54,7 +54,27 @@ print(sum(999, 111))
 '''
 
 def str_length(str):
-    print(str)
+    counter = 0
+    for char in str:
+        counter += 1
+    return counter
 
 print(str_length("Hello")) # 5
 print(str_length("Hello, my name is Alex!")) # 23
+print(str_length("Nice to meet you")) # 16
+
+
+'''
+напишіть функцію, яка приймає строку і повертає цю саму строку у перевернутому вигляді
+наприклад, якщо строка буде hello -> olleh
+laptop -> potpal
+
+будемо робити за допомогою індексів та циклу на перебір слова по символам
+'''
+
+def reverseStr(str):
+    print(str)
+
+
+print(reverseStr("hello")) # olleh
+print(reverseStr("laptop")) # potpal
