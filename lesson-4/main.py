@@ -78,10 +78,29 @@ laptop -> potpal
 '''
 
 def reverseStr(str):
-    str_length = len(str)
-    for i in range(0, str_length):
-        print(str[i], i)
+    new_string = "" # строка в яку я буду накопичувати букви у зворотньому порядку
+    str_length = len(str) # 5 - це довжина строки яку ми будемо перевертати 
+    for i in range(0, str_length): # від 0 до 4 - запускається цикл від 0 до довжини рядка
+        new_string += str[str_length - i - 1] # тут йде накопичення букв слова у зворотньому порядку по настунопу алгоритму:
+        # 1. new_string += str[5 - 0 - 1] -> str[4] -> o
+        # 2. new_string += str[5 - 1 - 1] -> str[3] -> l
+        # 3. new_string += str[5 - 2 - 1] -> str[2] -> l
+        # 4. new_string += str[5 - 3 - 1] -> str[1] -> e
+        # 5. new_string += str[5 - 4 - 1] -> str[0] -> h
+ 
+    return new_string # функція повертає новий рядок букви якого були збережені у зворотньому порядку
 
 print(reverseStr("hello")) # olleh
 print(reverseStr("laptop")) # potpal
+print(reverseStr("keyboard")) # draobyek
 
+'''
+написати фукнцію калькулятор. функція очікує 3 параметри: 1 число, 2 число і знак операції. Фукнція повинна повернути результат математичної операції
+'''
+
+def calculator(first_number, second_number, opataion):
+
+
+print(calculator(5, 8, "*")) # 40
+print(calculator(21, 3, "/")) # 3
+print(calculator(21, 3, "@")) # невідома операція
