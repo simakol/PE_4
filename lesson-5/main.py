@@ -1,17 +1,12 @@
-# import random
-
-# def get_randon_int(min, max):
-#     return random.randint(min, max) # фукнція, яка генерує псевдовипадкове число в діапазоні від мінімального до максимального
-
-# print(get_randon_int(10, 100))
-# print(get_randon_int(500, 1000))
-# print(get_randon_int(-100, -50))
-
-
 import tkinter as tk # ми імпортуємо(підключаємо) бібліотеку текінтер, але називаємо її tk щоб менше писати слів
+import random
+
+def get_randon_int(min, max):
+    return random.randint(min, max) # фукнція, яка генерує псевдовипадкове число в діапазоні від мінімального до максимального
 
 def print_msg():
     print("You clicked")
+    greeting["text"] = "You already clicked!"
 
 
 window = tk.Tk() # це створення головного елементу інтерфейсу, а саме - вікна програми
