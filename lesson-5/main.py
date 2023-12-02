@@ -7,7 +7,10 @@ def get_randon_int(min, max):
 def change_number():
   min = int(minValue.get())
   max = int(maxValue.get())
-  greeting["text"] = get_randon_int(min, max)
+  if min > max:
+    greeting["text"] = "Неправильні дані"
+  else:
+     greeting["text"] = get_randon_int(min, max)
 
 
 window = tk.Tk() # це створення головного елементу інтерфейсу, а саме - вікна програми
