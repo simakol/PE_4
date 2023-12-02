@@ -12,27 +12,27 @@ def назва():
 
 '''
 
-def print_message():
-    print("Hello world!!!")
+# def print_message():
+#     print("Hello world!")
 
-print_message()
-print_message()
-print_message()
-print_message()
-print_message()
+
+# print_message()
+# print_message()
+# print_message()
+# print_message()
 
 
 '''
 Часто потрібно зробити так, щоб фукнціє не просто робила якусь дію, а й мала якийсь результат виконання, наприклад, результат математичного розрахунку і т. д. Для цього всередині функцій використовується спеціальний оператор return. По-перше, цей оператор моментально завершує виконання функції. По-друге, те, що буде написано після return буде вважатися результатом роботи цієї фукнції, це означає, що ми зможемо зберегти цей результат у змінну і використовувати далі у коді
 '''
 
-def get_number():
-    print("Ця функція повертає цифру 5")
-    return 5 
+# def get_number():
+#     print("Ця функція повертає цифру 5")
+#     return 5
 
-result = 10 + get_number() # 10 + 5 = 15
+# result = 10 + get_number() # 10 + 5 = 15
 
-print(result)
+# print(result)
 
 '''
 Часто фукнції працюють з вхідними данними із зовнішнього коду. Для цього ми можемо використовувати параметри і аргументи.
@@ -40,28 +40,28 @@ print(result)
 Наприклад:
 '''
 
-def sum(a, b): #a, b - це параметри, це спеціальні змінні, які доступні тільки всередині функції, у яких фактично зараз немає значення. Але постає питання, чому ж дорівнює параметр a та параметр b? Свої значення параметри отримують під час виклику функції при передачі аргументів.
-    return a + b
+# def sum(a, b): #a, b - це параметри, це спеціальні змінні, які доступні тільки всередині функції, у яких фактично зараз немає значення. Але постає питання, чому ж дорівнює параметр a та параметр b? Свої значення параметри отримують під час виклику функції при передачі аргументів.
+#     return a + b
 
 
-print(sum(3, 9)) # 3, 9 - це аргументи, це спеціальні значення які передаються у фукнцію і стають значеннями параметрів фукнції. Порядок і кількість повинні бути збережені
-print(sum(15, 7))
-print(sum(999, 111))
+# print(sum(3, 9)) # 3, 9 - це аргументи, це спеціальні значення які передаються у фукнцію і стають значеннями параметрів фукнції. Порядок і кількість повинні бути збережені
+# print(sum(15, 7))
+# print(sum(999, 111))
 
 
-'''
-напішить фукнцію, яка в якості параметру очікує якусь строку і повертає її довжину(кількість символів у строці) зробити підрахунок символів за допомогою циклу for
-'''
+# '''
+# напішить фукнцію, яка в якості параметру очікує якусь строку і повертає її довжину(кількість символів у строці) зробити підрахунок символів за допомогою циклу for
+# '''
 
-def str_length(str):
-    counter = 0
-    for char in str:
-        counter += 1
-    return counter
+# def str_length(str):
+#     counter = 0
+#     for char in str:
+#         counter += 1
+#     return counter
 
-print(str_length("Hello")) # 5
-print(str_length("Hello, my name is Alex!")) # 23
-print(str_length("Nice to meet you")) # 16
+# print(str_length("Hello")) # 5
+# print(str_length("Hello, my name is Alex!")) # 23
+# print(str_length("Nice to meet you")) # 16
 
 
 '''
@@ -77,30 +77,44 @@ laptop -> potpal
 4. отримати букви з кінця і додавати до нової строки
 '''
 
-def reverseStr(str):
-    new_string = "" # строка в яку я буду накопичувати букви у зворотньому порядку
-    str_length = len(str) # 5 - це довжина строки яку ми будемо перевертати 
-    for i in range(0, str_length): # від 0 до 4 - запускається цикл від 0 до довжини рядка
-        new_string += str[str_length - i - 1] # тут йде накопичення букв слова у зворотньому порядку по настунопу алгоритму:
-        # 1. new_string += str[5 - 0 - 1] -> str[4] -> o
-        # 2. new_string += str[5 - 1 - 1] -> str[3] -> l
-        # 3. new_string += str[5 - 2 - 1] -> str[2] -> l
-        # 4. new_string += str[5 - 3 - 1] -> str[1] -> e
-        # 5. new_string += str[5 - 4 - 1] -> str[0] -> h
+# def reverseStr(str):
+#     new_string = "" # строка в яку я буду накопичувати букви у зворотньому порядку
+#     str_length = len(str) # 5 - це довжина строки яку ми будемо перевертати 
+#     for i in range(0, str_length): # від 0 до 4 - запускається цикл від 0 до довжини рядка
+#         new_string += str[str_length - i - 1] # тут йде накопичення букв слова у зворотньому порядку по настунопу алгоритму:
+#         # 1. new_string += str[5 - 0 - 1] -> str[4] -> o
+#         # 2. new_string += str[5 - 1 - 1] -> str[3] -> l
+#         # 3. new_string += str[5 - 2 - 1] -> str[2] -> l
+#         # 4. new_string += str[5 - 3 - 1] -> str[1] -> e
+#         # 5. new_string += str[5 - 4 - 1] -> str[0] -> h
  
-    return new_string # функція повертає новий рядок букви якого були збережені у зворотньому порядку
+#     return new_string # функція повертає новий рядок букви якого були збережені у зворотньому порядку
 
-print(reverseStr("hello")) # olleh
-print(reverseStr("laptop")) # potpal
-print(reverseStr("keyboard")) # draobyek
+# print(reverseStr("hello")) # olleh
+# print(reverseStr("laptop")) # potpal
+# print(reverseStr("keyboard")) # draobyek
 
 '''
 написати фукнцію калькулятор. функція очікує 3 параметри: 1 число, 2 число і знак операції. Фукнція повинна повернути результат математичної операції
 '''
 
-def calculator(first_number, second_number, operation):
+# def calculator(first_number, second_number, operation):
+#     result = 0
+
+#     if operation == "+":
+#         result = first_number + second_number
+#     elif operation == "-":
+#         result = first_number - second_number
+#     elif operation == "*":
+#         result = first_number * second_number
+#     elif operation == "/":
+#         result = first_number / second_number
+#     else:
+#         print("Такої операції не існує!")
+
+#     return result
 
 
 print(calculator(5, 8, "*")) # 40
-print(calculator(21, 3, "/")) # 3
+print(calculator(21, 3, "/")) # 7
 print(calculator(21, 3, "@")) # невідома операція
